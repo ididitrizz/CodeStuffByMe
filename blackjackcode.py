@@ -65,8 +65,11 @@ else:
     finaldval = Value(DHand)
     
 #Scoring
-if finalpval > finaldval:
-    print("You Win!")
+if finalpval > finaldval or finalpval == 22 and finaldval == 22:
+    if not finalpval == finaldval:
+        print("You Win!")
+    else:
+        print("Tie.")
 else:
     print("You Lose.")
 
